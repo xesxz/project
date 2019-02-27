@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <header></header>
+    <div class="outcart">
+        <div class="cart-in">
+            <p class="flow">
+                <a href="">购物车 </a>
+                <a href="">订单信息 </a>
+                <a href="">确认及付款 </a>
+                <a href="">完成 </a>
+            </p>
+            <div class="cartmain">
+                <div class="men cart empty hidden">
+                        购物车内没有商品。
+                </div>
+                <form action="" class="men cart not-empty">
+                    <table>
+                        <thead class="carthead">
+                            <tr>
+                                <td class="cart-product">商品</td>
+                                <td class="cart-title"></td>
+                                <td class="cart-price">单价（元）</td>
+                                <td class="cart-num">数量</td>
+                                <td class="cart-sum">小计（元）</td>
+                                <td>操作</td>
+                            </tr>
+                        </thead>
+                        <tbody class="cart-body">
+
+                        </tbody>
+
+                    </table>
+                </form>
+            </div>
+            <div class="more">
+                    <p class="first">最近浏览过的产品</p>
+                    <p class="next">我的收藏</p>
+                </div>
+        </div>
+        
+
+    </div>
+    <footer></footer>
+    <script type="text/html" id="cart-template">
+	{{ each cart prod }}
+	<tr data-id="{{prod.id}}">
+		
+		<!-- <td>{{prod.id}}</td> -->
+		<td><img src="{{prod.img}}" alt=""></td>
+		<td>{{prod.title}}</td>
+		<td class="cartprice">{{prod.price}}</td>
+		<td class="cartnum">
+            <div class="input-group">
+				<span class="input-group-addon minus">-</span>
+				<input type="text" value="{{prod.amount}}" class="form-control amount">
+				<span class="input-group-addon add">+</span>
+			</div></td>
+		<td>{{(prod.price * prod.amount).toFixed(2)}}</td>
+		<td><a href="javascript:void(0);" class="del">删除</a></td>
+	</tr>
+	{{ /each }}
+</script>
+    <script src="/libs/requirejs/require.js" data-main="/js/cart"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+   <header></header>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/5.jpg" alt=""></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+
+
+
+
+    <div class="out">
+        <div class="wrap">
+            <ul class="in">
+                <!-- <li>
+                    <img src="img/pic1.png" alt="">
+                    <p><a href="">傲娇精华50mL礼盒</a></p>
+                    <a href="">加入购物车</a>
+
+                </li>
+                <li>
+                    <img src="img/pic2.png" alt="">
+                    <p><a href="">抵御红三角套装</a></p>
+                    <a href="">加入购物车</a>
+                </li>
+                <li>
+                    <img src="img/pic3.png" alt="">
+                    <p><a href="">悦薇水乳套装</a></p>
+                    <a href="">加入购物车</a>
+                </li>
+                <li>
+                    <img src="img/pic4.png" alt="">
+                    <p><a href="">智能”气垫致彩套装</a></p>
+                    <a href="">加入购物车</a>
+                </li> -->
+            </ul>
+
+            <p class="title">新品上市</p>
+
+            <ul class="in1">
+                <li>
+                    <img src="img/a.png" alt="">
+                    <p><a href="">红妍肌活精华露<br>缎造物语限量版</a></p>
+                    <p class="price">￥1040</p>
+                    <a href="">加入购物车</a>
+                </li>
+                <li>
+                    <img src="img/b.png" alt="">
+                    <p><a href="">随肌应变气垫粉底液花椿限量版粉盒</a></p>
+                    <p class="price">￥100</p>
+                    <a href="">加入购物车</a>
+                </li>
+                <li>
+                    <img src="img/c.png" alt="">
+                    <p><a href="">随肌应变祛斑臻白气垫粉底液花椿限量版粉盒</a></p>
+                    <p class="price">￥100</p>
+                    <a href="">加入购物车</a>
+                </li>
+                <li>
+                    <img src="img/d.png" alt="">
+                    <p><a href="">肌源焕活精萃水（滋润型）</a></p>
+                    <p class="price">￥450</p>
+                    <a href="">加入购物车</a>
+                </li>
+            </ul>
+            <p class="title">最新资讯<p>
+                    <div class="box">
+                        <a href="">
+                            <img src="img/a1.png" alt="">
+                        </a>
+                    </div>
+        </div>
+    </div>
+    <footer></footer>
+    
+    <script src="./libs/jquery/jquery-1.12.4.min.js"></script>
+
+    <script>
+        var duration = 2000;
+        var currentIndex = 0;
+        var nextIndex = 1;
+
+        var imgs = $(".swiper-slide");
+        var len = imgs.length;
+        function move() {
+
+            $(imgs[currentIndex]).fadeOut("slow");
+
+            $(imgs[nextIndex]).fadeIn("slow")
+
+
+            currentIndex = nextIndex;
+            nextIndex++;
+            if (nextIndex >= len)
+                nextIndex = 0;
+
+        }
+
+        var timer = setInterval(move, duration);
+
+        // $("swiper-container").on("mouseenter",function(){
+        //     clearInterval(timer)
+        // })
+
+        $(".swiper-container").on("mouseenter", function () {
+            clearInterval(timer);
+        });
+        $(".swiper-container").on("mouseleave", function () {
+            timer = setInterval(move, duration);
+        });
+
+ </script>
+
+ <script src="/libs/requirejs/require.js" data-main="/js/index"></script>
+
+</body>
+
+
+</html>

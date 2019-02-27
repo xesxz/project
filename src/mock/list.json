@@ -1,0 +1,38 @@
+{
+  "res_code": 1,
+  "res_error": "",
+  "res_body": {
+    "list": [
+      {
+        "id": 1,
+        "img": "http://dummyimage.com/159x156/79f2a3",
+        "price": 818.05,
+        "title": "准量适局全斯消"
+      },
+      {
+        "id": 2,
+        "img": "http://dummyimage.com/159x156/f28079",
+        "price": 996.18,
+        "title": "他际流厂历有元指"
+      },
+      {
+        "id": 3,
+        "img": "http://dummyimage.com/159x156/7995f2",
+        "price": 362.45,
+        "title": "连委参计些面记共土万"
+      },
+      {
+        "id": 4,
+        "img": "http://dummyimage.com/159x156/b8f279",
+        "price": 312.22,
+        "title": "自华太原空党具团"
+      },
+      {
+        "id": 5,
+        "img": "http://dummyimage.com/159x156/f279dc",
+        "price": 273.32,
+        "title": "小率转向火号马建"
+      }
+    ]
+  }
+}

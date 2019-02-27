@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/list.css    ">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header></header>
+    <div class="content">
+        <div class="small_nav">
+            <span> <a href="">首页</a></span>
+            <span>»</span>
+            <span><a href="">护肤</a></span>
+        </div>
+        <h2>护肤</h2>
+        <div class="wrap">
+            <div class="wrap_bar">
+                <div class="pageview">
+                    <span class="pre"></span>
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <span class="next"></span>
+                </div>
+                <div class="right">
+                    <span class="sort">排序</span>
+                    <span class="total">产品总数：73</span>
+                </div>
+            </div>
+            <div class="left_nav">
+                <ul class="fenglei">
+                    <li><a href="">按种类</a></li>
+                    <li><a href="">按系列</a></li>
+                    <li><a href="">按关心问题</a></li>
+                </ul>
+            </div>
+            <div class="product">
+                <ul class="ull">
+     
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <footer></footer>
+
+
+ 
+
+
+    <script type="text/html" id="list-template">
+    {{ each list item index }}
+    <li data-id="{{item.id}}">
+        <a href="/html/detail.html?id={{item.id}}" class="goods" >
+            <div class="productimage">
+                <img src="{{item.img}}" alt="" class="prod-img">
+            </div>
+            <p class="p1">{{item.title}}</p>
+            <p class="p2">50mL</p>
+        </a>
+            <p class="p3">{{item.price}}</p>
+       
+            <button class="add-to-cart"> 加入购物车</button>
+            <p class="p5"><a href="">详情</a></p>
+       
+    </li>
+{{/each}}
+                   
+</script>
+    <script src="/libs/requirejs/require.js" data-main="/js/list"></script>
+
+</body>
+
+</html>

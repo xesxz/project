@@ -1,0 +1,167 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+ul li{list-style:none;}
+a{text-decoration:none;}
+
+.content{
+    width: 980px;
+    height: 2900px;
+    margin: 0 auto;
+  
+}
+.content .small_nav{
+    width: 944px;
+    height: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px
+}
+.content .small_nav span{
+    color: #b2b2b2;
+    font-size: 12px;
+}
+.content .small_nav span a{
+    color: #b2b2b2;
+    font-size: 12px;
+}
+
+.content h2{
+    color: #863638;
+    font-size: 23px;
+}
+
+.content .wrap .wrap_bar{
+    margin-left:466px;
+    height: 100px;
+}
+
+.content .wrap .wrap_bar .pageview{
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    
+
+}
+.content .wrap .wrap_bar .pageview .pre{
+    width: 25px;
+    height: 25px;
+   
+    background: url(../img/icon13.jpg) no-repeat center bottom;
+    display: inline-block
+}
+
+.content .wrap .wrap_bar .pageview .next{
+    width: 25px;
+    height: 25px;
+    background: url(../img/icon14.jpg) no-repeat center bottom;
+    display: inline-block
+}
+
+.content .wrap .wrap_bar .pageview a{
+    margin: 0 6px;
+    color: #670205;
+    font-size: 14px;
+
+}
+
+
+.content .wrap .wrap_bar .right{
+    float: right;
+}
+
+.content .wrap .wrap_bar .right .sort{
+    font-size: 15px;
+    color: #7c0d02;
+   
+}
+.content .wrap .wrap_bar .right .sort::before{
+    width: 20px;
+    height: 20px;
+    content: "";
+    background: url(../img/icon10.jpg) no-repeat center center;
+    display: inline-block
+
+}
+.content .wrap .wrap_bar .right .sort::after{
+    width: 20px;
+    height: 20px;
+    content: "";
+    background: url(../img/icon11.jpg) no-repeat center center;
+    display: inline-block
+
+}
+.content .wrap .wrap_bar .right .total{
+    font-size: 14px;
+}
+.content .wrap .left_nav{
+    float: left;
+}
+
+.content .wrap .left_nav .fenglei li{
+    margin: 8px 0
+}
+.content .wrap .left_nav .fenglei li a{
+    width: 115px;
+    height: 20px;
+    display: inline-block;
+    background: url(../img/icon15.jpg)
+}
+.content .wrap .product{
+    width: 824px;
+    height: 2735px;
+    
+    float: left;
+   
+}
+
+.content .wrap .product .ull{
+    width: 824px;
+    height: 2735px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.content .wrap .product .ull li{
+    width: 235px;
+    height: 440px;
+   
+    
+   
+}
+
+.content .wrap .product .ull li p{
+    margin: 0 auto;
+    text-align: center
+}
+
+.content .wrap .product .ull li .goods{
+    display: block;
+    width: 240px;
+    height: 312px;
+}
+
+.content .wrap .product .ull li a .productimage img{
+    width: 230px ;
+    height: 230px;
+}
+.content .wrap .product .ull li .add-to-cart{
+    width: 130px;
+    height: 35px;
+    background: #7c0d02;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 52px
+}
+.content .wrap .product .ull li:nth-child(5) a{
+    color: #ffffff
+}
+.content .wrap .product .ull li:nth-child(6) a{
+    color: red
+}
+.content .wrap .product .ull li .p5{
+    width: 128px;
+    height: 35px;
+    border: 1px solid #7c0d02
+}
+
+
