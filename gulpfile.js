@@ -73,7 +73,7 @@ gulp.task("libs", () => {
 gulp.task("watch" ,() => {
 	gulp.watch("src/**/*.html", ["html"]);
 	gulp.watch("src/js/**/*.js", ["js"]);
-	gulp.watch("src/scss/**/*.scss", ["css"]);
+	gulp.watch("src/css/**/*.css", ["css"]);
 })
 
 

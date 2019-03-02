@@ -47,11 +47,11 @@
         </div>
         <div class="login_bot">
             <div class="login_signin">
-                <form action="" class="login_wrap">
+                <form action='' class="login_wrap">
                     <h3>已经是会员</h3>
                     <p class="p1">马上登陆获得更多会员资讯</p>
-                    <input type="text" placeholder="手机号码/电子邮箱" id="username1">
-                    <input type="password" placeholder="密码" id="password1">
+                    <input type="text" placeholder="手机号码/电子邮箱" id="username1" name="username">
+                    <input type="password" placeholder="密码" id="password1" name="password">
                     <p><a href="">忘记密码？</a></p>
                     <p>
                         <input type="checkbox">
@@ -64,11 +64,14 @@
                 <form action="" class="register">
                     <h3>加入会员</h3>
                     <p>成为资生堂花庄会员，体验各种为您量身定制的奢享礼遇</p>
-                    <input type="text" placeholder="电子邮箱" id="username2">
-                    <input type="password" placeholder="密码" id="password2">
-                    <i>密码必须是6位以上字母和数字组成，可以包含符号。</i>
+                    <p class="pp"><input type="text" placeholder="电子邮箱" id="username2" name="username">
+                    <span id="uname_info2"></span>
+                </p>
+                    <input type="password" placeholder="密码" id="password2" name="password">
+                   <p> <i>密码必须是6位以上字母和数字组成，可以包含符号。</i></p>
                     <input type="text" placeholder="密码确认">
                     <input type="text" placeholder="图形验证码">
+                    <img src="" alt="" id="gen-code" title="点击切换">
                     <p><a href="">看不清楚?换一个</a></p>
                     <input type="text" placeholder="手机">
                     <p>
@@ -89,7 +92,7 @@
                         <input type="radio" id="bdy" name="sex"><label for="bdy">不订阅</label>
                     </p>
                     <p><input type="checkbox"><span>我已阅读并接受了</span><a href="">隐私保护条款</a></p>
-                    <p><button>身份绑定</button><button>注册</button class="regBtn"></p>
+                    <p><button>身份绑定</button><button  id="regBtn">注册</button></p>
                 </form>
             </div>
         </div>

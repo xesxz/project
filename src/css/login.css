@@ -45,6 +45,14 @@ a{text-decoration:none;}
 }
 
 
+.login_signin input[type="text"]{
+    display: block;
+    margin: 10px auto;
+    width: 165px;
+    height: 24px;
+}
+
+
 .middle .login_bot .login_signup .register i{
     font-size: 12px;
     color: #9d1c32
@@ -65,4 +73,50 @@ a{text-decoration:none;}
     height: 29px;
     text-align: center;
     color: #ffffff
+}
+.offi_top_number{
+    background: #9e1503;
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 52px;
+    font-size: 33px;
+    color: #ffffff
+}
+
+.offi_top_p1{
+    width: 158px;
+    height: 37px;
+    background: #aeb0b3;
+    line-height: 37px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+li{
+    position: relative;
+}
+
+.offi_top_number{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.pp{
+    position: relative;
+}
+
+.pp #uname_info2{
+    position: absolute;
+    right: 0;
+    top:0;
+    color: red
+    
+
 }

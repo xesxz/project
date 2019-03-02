@@ -10,7 +10,7 @@ require(["./config"], function() {
 			// ajax 加载列表数据
 			loadList() {
 				// $.getJSON("/mock/list.json", res => {
-				$.getJSON("http://148.70.25.70:8080/app/mock/18/api/list", res => {
+				$.getJSON("http://rap2api.taobao.org/app/mock/126856/api/detail", res => {
 					console.log(res)
 					// res.res_body.list;
 					const data = {list: res.res_body.list}
@@ -53,22 +53,7 @@ require(["./config"], function() {
 				// 将购物车保存到cookie中
 				$.cookie("cart", cart, {expires: 7, path: "/"})
 
-				// 添加抛物线效果
-				// const _end = $(".mycart").offset();
-				// const flyer = $(`<img src="${currProd.img}" style="width:40px; height: 40px;">`);
-				// flyer.fly({
-				// 	start: {
-				// 		left: event.pageX - $(window).scrollLeft(),
-				// 		top: event.pageY - $(window).scrollTop()
-				// 	},
-				// 	end: {
-				// 		left: _end.left - $(window).scrollLeft(),
-				// 		top: _end.top - $(window).scrollTop()
-				// 	},
-				// 	onEnd: function() {
-				// 		this.destroy();
-				// 	}
-				// });
+				
 			}
 		}
 
